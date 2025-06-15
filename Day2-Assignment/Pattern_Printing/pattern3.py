@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 num = int(input("Enter the number of rows:"))
 for i in range(num):
     for j in range(0,i+1):
@@ -13,4 +14,21 @@ for i in range(num):
 
 
 
+=======
+num = int(input("Enter the number of rows:"))
+for i in range(num):
+    for j in range(0,i+1):
+        print(j+1,end="")
+    print();
+
+
+'''
+1
+12
+123
+1234
+
+
+
+>>>>>>> 4d32e8f (Added Day2 works)
 '''
