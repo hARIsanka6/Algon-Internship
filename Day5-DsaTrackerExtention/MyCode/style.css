@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  width: 300px;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --box: #f1f1f1;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #ffffff;
+  --box: #2c2c2c;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.bookmark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--box);
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.bookmark-title {
+  flex: 1;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bookmark-controls img {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle .slider {
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.theme-toggle .slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  top: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.theme-toggle input:checked + .slider {
+  background: #4caf50;
+}
+
+.theme-toggle input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.label-text {
+  font-size: 12px;
+  margin-left: 10px;
+}

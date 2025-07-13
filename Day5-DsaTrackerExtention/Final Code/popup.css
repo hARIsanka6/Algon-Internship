@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  padding: 10px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bookmark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bookmark-title {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.bookmark-controls img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+}

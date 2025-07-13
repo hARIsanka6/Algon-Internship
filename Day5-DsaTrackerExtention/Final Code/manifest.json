@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Algon DSA To-Do",
+  "version": "1.0",
+  "description": "Bookmark your favorite DSA problems from Algon platform!",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/bookmark.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "assets/bookmark.png",
+    "48": "assets/bookmark.png",
+    "128": "assets/bookmark.png"
+  }
+}
